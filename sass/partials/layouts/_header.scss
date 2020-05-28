@@ -1,0 +1,15 @@
+header{
+    height: 25vh;
+    background-color: $green;
+    width: 100%;
+    div {
+        padding-top: 20px;
+        h1{
+        font-size: 9vh;
+        color: $yellow;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-align: center;
+        }
+    }
+}

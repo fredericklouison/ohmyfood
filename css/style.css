@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Devonshire";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/devonshire-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Devonshire-Regular"), url("../fonts/devonshire-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/devonshire-v8-latin-regular.woff2") format("woff2"), url("../fonts/devonshire-v8-latin-regular.woff") format("woff"), url("../fonts/devonshire-v8-latin-regular.ttf") format("truetype"), url("../fonts/devonshire-v8-latin-regular.svg#Devonshire") format("svg");
+  /* Legacy iOS */
+}
+#legal {
+  position: relative;
+  top: 40%;
+  right: -100px;
+}
+#legal h2 {
+  font-size: 5vh;
+  color: #fdcb46;
+  font-family: sans-serif;
+}
+
+#contact {
+  position: absolute;
+  top: 40%;
+  right: 100px;
+}
+#contact h2 {
+  font-size: 5vh;
+  color: #fdcb46;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  #contact {
+    right: 0px;
+  }
+  #contact h2 {
+    font-size: 3vh;
+  }
+
+  #legal {
+    left: 0px;
+  }
+  #legal h2 {
+    font-size: 3vh;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 14vh;
+  width: 100%;
+  background-color: #579c87;
+  display: flex;
+}
+
+header {
+  height: 25vh;
+  background-color: #579c87;
+  width: 100%;
+}
+header div {
+  padding-top: 20px;
+}
+header div h1 {
+  font-size: 9vh;
+  color: #fdcb46;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.row {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.menu-form {
+  width: 435px;
+  height: 650px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 8px 2px #a2a5a4b9;
+}
+
+.icon {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 170px;
+}
+
+.text {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Devonshire", cursive, sans-serif;
+}
+.text-menu {
+  font-family: segoe print;
+  text-align: center;
+  font-size: 50px;
+}
+
+#one {
+  background-color: #fcdfdb;
+}
+
+#two {
+  background-color: #fff5fe;
+}
+
+#three {
+  background-color: #f9f9f9;
+}
+
+#four {
+  background-color: #fdfffd;
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .menu-form {
+    width: 365px;
+    height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

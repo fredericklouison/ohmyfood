@@ -1,0 +1,38 @@
+#legal{
+    position: relative;
+    top: 40%;
+    right: -100px;
+    h2{
+        font-size:5vh; 
+        color: #fdcb46;
+        font-family: sans-serif;
+    
+    }
+}
+ 
+#contact{
+    position: absolute;
+    top: 40%;
+    right: 100px;
+    h2{
+        font-size:5vh;
+        color: #fdcb46;
+        font-family: sans-serif;
+    }
+}
+@media screen and (max-width:900px){
+    #contact  {
+      right: 0px;
+      h2{
+          font-size: 3vh; 
+          
+      }
+    }  
+    #legal {
+      left: 0px;
+      h2{
+          font-size: 3vh; 
+          
+      }
+    }  
+  }

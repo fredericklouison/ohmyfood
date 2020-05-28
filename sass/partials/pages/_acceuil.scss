@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.row{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 90%;
+    justify-content: space-between;
+
+    
+}
+.menu-form{
+    width: 435px;
+    height:650px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 8px 2px #a2a5a4b9;
+    
+}
+.icon{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 170px;
+}
+.text{
+    text-align: center;
+    font-size: 40px;
+    font-family:"Devonshire", cursive ,sans-serif;
+    &-menu{
+        font-family: segoe print;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+#one{
+    background-color:$lanote;
+}
+#two{
+    background-color: $lechic;
+}
+#three{
+    background-color: $ledelice;
+}
+#four{
+    background-color: $lapalette;
+}
+@media screen and (max-width:900px){
+    .row{
+        flex-direction: column;
+    }
+    .menu-form{
+       width: 365px;
+       height:530px;
+       margin-left: auto;
+       margin-right: auto;;
+       margin-top: 100px;
+       
+   
+       }
+
+}
