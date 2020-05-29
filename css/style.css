@@ -7,6 +7,46 @@
   src: local("Devonshire-Regular"), url("../fonts/devonshire-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/devonshire-v8-latin-regular.woff2") format("woff2"), url("../fonts/devonshire-v8-latin-regular.woff") format("woff"), url("../fonts/devonshire-v8-latin-regular.ttf") format("truetype"), url("../fonts/devonshire-v8-latin-regular.svg#Devonshire") format("svg");
   /* Legacy iOS */
 }
+/* dancing-script-regular - latin */
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/dancing-script-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/dancing-script-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/dancing-script-v14-latin-regular.woff2") format("woff2"), url("../fonts/dancing-script-v14-latin-regular.woff") format("woff"), url("../fonts/dancing-script-v14-latin-regular.ttf") format("truetype"), url("../fonts/dancing-script-v14-latin-regular.svg#DancingScript") format("svg");
+  /* Legacy iOS */
+}
+/* kaushan-script-regular - latin */
+@font-face {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kaushan-script-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../fonts/kaushan-script-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff"), url("../fonts/kaushan-script-v8-latin-regular.ttf") format("truetype"), url("../fonts/kaushan-script-v8-latin-regular.svg#KaushanScript") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v14-latin-regular.woff") format("woff"), url("../fonts/montserrat-v14-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v14-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v14-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v14-latin-700.woff") format("woff"), url("../fonts/montserrat-v14-latin-700.ttf") format("truetype"), url("../fonts/montserrat-v14-latin-700.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
 #legal {
   position: relative;
   top: 40%;
@@ -29,16 +69,16 @@
   font-family: sans-serif;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   #contact {
-    right: 0px;
+    right: 10px;
   }
   #contact h2 {
     font-size: 3vh;
   }
 
   #legal {
-    left: 0px;
+    left: 10px;
   }
   #legal h2 {
     font-size: 3vh;
@@ -54,21 +94,33 @@ footer {
 }
 
 header {
-  height: 25vh;
+  height: 250px;
   background-color: #579c87;
   width: 100%;
+  border-bottom: 2px solid #a1c181;
 }
 header div {
-  padding-top: 20px;
+  position: relative;
+  top: 25%;
 }
 header div h1 {
-  font-size: 9vh;
   color: #fdcb46;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-size: 90px;
+  font-family: "Montserrat";
+  letter-spacing: -5px;
+  font-weight: 700;
   text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+  header {
+    height: 150px;
+    width: 100%;
+  }
+  header div h1 {
+    font-size: 60px;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -96,15 +148,23 @@ header div h1 {
   margin-top: 170px;
 }
 
+.icon .fas {
+  background: -webkit-linear-gradient(right, #f78f6a, #f15861);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text {
   text-align: center;
   font-size: 40px;
   font-family: "Devonshire", cursive, sans-serif;
+  color: #3c1218;
 }
 .text-menu {
   font-family: segoe print;
   text-align: center;
   font-size: 50px;
+  color: #3c1218;
 }
 
 #one {
@@ -126,11 +186,12 @@ header div h1 {
 @media screen and (max-width: 900px) {
   .row {
     flex-direction: column;
+    width: 100%;
   }
 
   .menu-form {
-    width: 365px;
-    height: 530px;
+    width: 300px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;

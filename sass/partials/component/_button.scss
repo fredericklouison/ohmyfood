@@ -9,7 +9,6 @@
     
     }
 }
- 
 #contact{
     position: absolute;
     top: 40%;
@@ -20,16 +19,16 @@
         font-family: sans-serif;
     }
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:1024px){
     #contact  {
-      right: 0px;
+      right: 10px;
       h2{
           font-size: 3vh; 
           
       }
     }  
     #legal {
-      left: 0px;
+      left: 10px;
       h2{
           font-size: 3vh; 
           
