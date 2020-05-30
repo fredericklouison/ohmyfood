@@ -11,8 +11,8 @@
         font-size: 35px;
       }
       div{
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         margin: auto 2px;
         background-color: $yellow;
         border-radius: 50%;
@@ -26,6 +26,9 @@
     }
   } 
   #soon div{
+    &:nth-child(2){
+      margin-left: 15px;
+  }
     &:nth-child(3){
         animation-delay: 0.3s;
     }
@@ -41,7 +44,7 @@
           
       }
       50%{
-          transform: translateY(-15px);
+          transform: translateY(-5px);
         
       }
   }
