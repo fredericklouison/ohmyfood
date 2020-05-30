@@ -47,6 +47,16 @@
   src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v14-latin-700.woff") format("woff"), url("../fonts/montserrat-v14-latin-700.ttf") format("truetype"), url("../fonts/montserrat-v14-latin-700.svg#Montserrat") format("svg");
   /* Legacy iOS */
 }
+/* croissant-one-regular - latin */
+@font-face {
+  font-family: "Croissant One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/croissant-one-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Croissant One"), local("CroissantOne-Regular"), url("../fonts/croissant-one-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/croissant-one-v7-latin-regular.woff2") format("woff2"), url("../fonts/croissant-one-v7-latin-regular.woff") format("woff"), url("../fonts/croissant-one-v7-latin-regular.ttf") format("truetype"), url("../fonts/croissant-one-v7-latin-regular.svg#CroissantOne") format("svg");
+  /* Legacy iOS */
+}
 #legal {
   position: relative;
   top: 40%;
@@ -69,30 +79,91 @@
   font-family: sans-serif;
 }
 
+#soon {
+  background-color: #579c87;
+  width: 600px;
+  margin: 100px auto 150px auto;
+  height: 120px;
+  border-radius: 10px;
+}
+#soon h2 {
+  position: relative;
+  top: 10%;
+  text-align: center;
+  font-size: 70px;
+  color: #fdcb46;
+}
+
 @media screen and (max-width: 1024px) {
   #contact {
     right: 10px;
   }
   #contact h2 {
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 
   #legal {
     left: 10px;
   }
   #legal h2 {
-    font-size: 3vh;
+    font-size: 2.5vh;
+  }
+}
+#soon {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+}
+#soon h2 {
+  margin-left: 15px;
+  position: relative;
+  top: 10%;
+  font-size: 35px;
+}
+#soon div {
+  width: 10px;
+  height: 10px;
+  margin: auto 2px;
+  background-color: #fdcb46;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: soon;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#soon div:nth-child(2) {
+  animation-delay: 0.4s;
+}
+#soon div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes soon {
+  30% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
   }
 }
 footer {
   position: fixed;
   bottom: 0px;
-  height: 14vh;
+  height: 135px;
   width: 100%;
   background-color: #579c87;
   display: flex;
 }
 
+@media screen and (max-width: 1024px) {
+  footer {
+    height: 75px;
+    width: 100%;
+  }
+}
 header {
   height: 250px;
   background-color: #579c87;
@@ -124,6 +195,7 @@ header div h1 {
 * {
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 .row {
@@ -140,55 +212,112 @@ header div h1 {
   height: 650px;
   margin-top: 100px;
   box-shadow: 0px 0px 8px 2px #a2a5a4b9;
+  overflow: hidden;
+}
+
+.menu-title {
+  transform: scale(1);
+  margin-top: 170px;
+}
+.menu-title:hover {
+  transform: scale(1.3);
+  transition: transform 500ms ease-in-out;
+  opacity: 0.7;
 }
 
 .icon {
   text-align: center;
   font-size: 70px;
-  margin-top: 170px;
 }
-
 .icon .fas {
   background: -webkit-linear-gradient(right, #f78f6a, #f15861);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text {
-  text-align: center;
-  font-size: 40px;
-  font-family: "Devonshire", cursive, sans-serif;
-  color: #3c1218;
-}
-.text-menu {
-  font-family: segoe print;
-  text-align: center;
-  font-size: 50px;
-  color: #3c1218;
-}
-
 #one {
   background-color: #fcdfdb;
+}
+#one .text {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Devonshire", sans-serif;
+  font-weight: lighter;
+  background: -webkit-linear-gradient(right, #3c1218, #3c1218);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#one .text-menu {
+  font-family: segoe print;
+  text-align: center;
+  font-size: 40px;
+  color: #3c1218;
 }
 
 #two {
   background-color: #fff5fe;
 }
+#two .text {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Croissant One", sans-serif;
+  font-weight: lighter;
+  background: -webkit-linear-gradient(right, #c19df3, #d8852e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#two .text-menu {
+  font-family: serif;
+  text-align: center;
+  font-size: 40px;
+  color: #d8852e;
+}
 
 #three {
   background-color: #f9f9f9;
+}
+#three .text {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Dancing script", sans-serif;
+  font-weight: lighter;
+  background: -webkit-linear-gradient(right, #0887fb, #0431df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#three .text-menu {
+  font-family: segoe script;
+  text-align: center;
+  font-size: 40px;
+  color: #0431df;
 }
 
 #four {
   background-color: #fdfffd;
 }
+#four .text {
+  text-align: center;
+  font-size: 40px;
+  font-family: "kaushan script", sans-serif;
+  font-weight: lighter;
+  background: -webkit-linear-gradient(right, #bfff7e, #42973c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#four .text-menu {
+  font-family: segoe script;
+  text-align: center;
+  font-size: 40px;
+  color: #72bf56;
+}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) and (max-width: 980px) {
   .row {
     flex-direction: column;
     width: 100%;
   }
-
+}
+@media screen and (max-width: 1024px) {
   .menu-form {
     width: 300px;
     height: 500px;

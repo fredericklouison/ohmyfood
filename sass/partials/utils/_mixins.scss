@@ -3,3 +3,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
+@mixin menu-acceuil($color,$color1,$color2,$font1,$font2,$size) {
+    .text{
+        
+        text-align: center;
+        font-size: $size;
+        font-family:$font1,sans-serif;
+        font-weight: lighter;
+        @include transition-color($color1,$color2);
+        &-menu{
+            font-family: $font2;
+            text-align: center;
+            font-size: 40px;
+            color: $color;
+        }
+        
+    }
+    
+}
