@@ -10,6 +10,7 @@
     max-width: 1000px;
     width: 90%;
     justify-content: space-between;
+    
 }
 .menu-form{
     width: 435px;
@@ -50,6 +51,16 @@
     background-color: $lapalette;
     @include menu-acceuil($lapalette4,$lapalette3,$lapalette2,'kaushan script',segoe script,40px)
 }
+@media screen and (min-width:1500px){
+    .content{
+        display: flex;
+        max-width: 1900px;
+        margin: auto;
+    }
+    .row{
+        max-width:910px; ;
+    }
+}
 @media screen and (max-width:1024px){
     @media screen and (max-width:980px){
         .row{
@@ -57,7 +68,6 @@
             width: 100%;
         }
     }
-   
     .menu-form{
        width: 300px;
        height:500px;

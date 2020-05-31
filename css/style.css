@@ -79,21 +79,6 @@
   font-family: sans-serif;
 }
 
-#soon {
-  background-color: #579c87;
-  width: 600px;
-  margin: 100px auto 150px auto;
-  height: 120px;
-  border-radius: 10px;
-}
-#soon h2 {
-  position: relative;
-  top: 10%;
-  text-align: center;
-  font-size: 70px;
-  color: #fdcb46;
-}
-
 @media screen and (max-width: 1024px) {
   #contact {
     right: 10px;
@@ -111,19 +96,24 @@
 }
 #soon {
   display: flex;
-  width: 300px;
-  height: 60px;
-  border-radius: 10px;
+  width: 550px;
+  height: 120px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #579c87;
+  margin: 100px auto 200px auto;
 }
 #soon h2 {
   margin-left: 15px;
   position: relative;
   top: 10%;
-  font-size: 35px;
+  font-size: 70px;
+  text-align: center;
+  color: #fdcb46;
 }
 #soon div {
-  width: 5px;
-  height: 5px;
+  width: 15px;
+  height: 15px;
   margin: auto 2px;
   background-color: #fdcb46;
   border-radius: 50%;
@@ -133,7 +123,6 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
 #soon div:nth-child(2) {
   margin-left: 15px;
 }
@@ -150,6 +139,26 @@
   }
   50% {
     transform: translateY(-5px);
+  }
+}
+@media screen and (max-width: 900px) {
+  #soon {
+    width: 290px;
+    height: 60px;
+    border-radius: 15px;
+  }
+  #soon h2 {
+    font-size: 35px;
+  }
+  #soon div {
+    width: 5px;
+    height: 5px;
+  }
+
+  @keyframes soon {
+    50% {
+      transform: translateY(-2px);
+    }
   }
 }
 .wiggle:hover {
@@ -269,13 +278,13 @@ header div h1 {
   text-align: center;
   font-size: 40px;
   font-family: "Devonshire", sans-serif;
-  font-weight: lighter;
   background: -webkit-linear-gradient(right, #3c1218, #3c1218);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #one .text-menu {
   font-family: segoe print;
+  font-weight: bold;
   text-align: center;
   font-size: 40px;
   color: #3c1218;
@@ -288,13 +297,13 @@ header div h1 {
   text-align: center;
   font-size: 28px;
   font-family: "Croissant One", sans-serif;
-  font-weight: lighter;
   background: -webkit-linear-gradient(right, #c19df3, #d8852e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #two .text-menu {
   font-family: serif;
+  font-weight: bold;
   text-align: center;
   font-size: 40px;
   color: #d8852e;
@@ -307,13 +316,13 @@ header div h1 {
   text-align: center;
   font-size: 40px;
   font-family: "Dancing script", sans-serif;
-  font-weight: lighter;
   background: -webkit-linear-gradient(right, #0887fb, #0431df);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #three .text-menu {
   font-family: segoe script;
+  font-weight: bold;
   text-align: center;
   font-size: 40px;
   color: #0431df;
@@ -326,18 +335,29 @@ header div h1 {
   text-align: center;
   font-size: 40px;
   font-family: "kaushan script", sans-serif;
-  font-weight: lighter;
   background: -webkit-linear-gradient(right, #bfff7e, #42973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #four .text-menu {
   font-family: segoe script;
+  font-weight: bold;
   text-align: center;
   font-size: 40px;
   color: #72bf56;
 }
 
+@media screen and (min-width: 1500px) {
+  .content {
+    display: flex;
+    max-width: 1900px;
+    margin: auto;
+  }
+
+  .row {
+    max-width: 910px;
+  }
+}
 @media screen and (max-width: 1024px) and (max-width: 980px) {
   .row {
     flex-direction: column;

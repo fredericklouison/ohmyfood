@@ -1,18 +1,23 @@
 
   #soon{
       display: flex;
-      width: 300px;
-      height: 60px;
-      border-radius: 10px;
+      width: 550px;
+      height: 120px;
+      border-radius: 30px;
+      text-align: center;
+      background-color: $green;
+      margin:  100px auto 200px auto;
       h2{
         margin-left: 15px;
         position: relative;
         top: 10%;
-        font-size: 35px;
+        font-size: 70px;
+        text-align: center;
+        color: $yellow;
       }
       div{
-        width: 5px;
-        height: 5px;
+        width: 15px;
+        height: 15px;
         margin: auto 2px;
         background-color: $yellow;
         border-radius: 50%;
@@ -21,31 +26,42 @@
         animation-duration:0.9s;
         animation-iteration-count: infinite;
         animation-timing-function:linear;
-
+        &:nth-child(2){
+          margin-left: 15px;
+      }
+        &:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        &:nth-child(4){
+            animation-delay: 0.6s;
+        }
         
     }
   } 
-  #soon div{
-    &:nth-child(2){
-      margin-left: 15px;
-  }
-    &:nth-child(3){
-        animation-delay: 0.3s;
-    }
-    &:nth-child(4){
-        animation-delay: 0.6s;
-    }
-
-  }
- 
   @keyframes soon{
       0%{
-          transform: translateY(0px);
-          
+          transform: translateY(0px);    
       }
       50%{
           transform: translateY(-5px);
-        
       }
   }
-    
+  @media screen and(max-width:900px){
+    #soon{
+      width: 290px;
+      height: 60px;
+      border-radius: 15px;
+      h2{
+        font-size: 35px;
+      }
+      div{
+        width: 5px;
+        height: 5px;   
+      }
+    } 
+    @keyframes soon{
+      50%{
+          transform: translateY(-2px);  
+      }
+    }
+  }
