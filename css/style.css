@@ -152,6 +152,30 @@
     transform: translateY(-5px);
   }
 }
+.wiggle:hover {
+  animation-name: wiggle;
+  animation-duration: 0.2s;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+}
 footer {
   position: fixed;
   bottom: 0px;
