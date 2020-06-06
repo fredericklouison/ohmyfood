@@ -185,6 +185,33 @@
     transform: translateX(-10px);
   }
 }
+.text-title:hover + .underline {
+  transform: scaleX(1);
+}
+
+.underline {
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+  height: 4px;
+  transition: transform 500ms;
+  transition-timing-function: ease-out;
+  background-color: #000;
+}
+
+.lanote {
+  background-color: #3c1218;
+}
+
+.lechic_1 {
+  background-color: #d8852e;
+}
+.lechic_2 {
+  background-color: #a56799;
+}
+.lechic_3 {
+  background-color: #6e4ccc;
+}
+
 footer {
   position: fixed;
   bottom: 0px;
@@ -257,7 +284,7 @@ header div h1 {
   margin-top: 170px;
 }
 .menu-title:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: transform 500ms ease-in-out;
   opacity: 0.7;
 }
@@ -405,7 +432,7 @@ header div h1 {
 }
 #lanote .content-menu .menu .text {
   font-family: "Devonshire";
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
   background: -webkit-linear-gradient(right, #3c1218, #3c1218);
   -webkit-background-clip: text;
@@ -463,7 +490,7 @@ header div h1 {
     font-size: 5vw;
   }
   #lanote .content-menu .menu {
-    width: 90%;
+    width: 95%;
   }
   #lanote .content-menu .menu .text-title {
     font-size: 20px;
@@ -501,7 +528,7 @@ header div h1 {
 }
 #lechic .content-menu .menu .text {
   font-family: "Croissant One";
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
   background: -webkit-linear-gradient(right, #6e4ccc, #d8852e);
   -webkit-background-clip: text;
@@ -559,7 +586,7 @@ header div h1 {
     font-size: 5vw;
   }
   #lechic .content-menu .menu {
-    width: 90%;
+    width: 95%;
   }
   #lechic .content-menu .menu .text-title {
     font-size: 20px;
@@ -569,9 +596,15 @@ header div h1 {
   color: #d8852e;
   margin-bottom: 30px;
 }
+#lechic #grade1 p.text-title {
+  margin-bottom: 0px;
+}
 #lechic #grade2 p {
   color: #a56799;
   margin-bottom: 30px;
+}
+#lechic #grade2 p.text-title {
+  margin-bottom: 0px;
 }
 #lechic #grade3 {
   padding-bottom: 150px;
@@ -579,6 +612,9 @@ header div h1 {
 #lechic #grade3 p {
   color: #6e4ccc;
   margin-bottom: 30px;
+}
+#lechic #grade3 p.text-title {
+  margin-bottom: 0px;
 }
 
 #ledelice .content-menu {
@@ -612,7 +648,7 @@ header div h1 {
 }
 #ledelice .content-menu .menu .text {
   font-family: "Dancing script";
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
   background: -webkit-linear-gradient(right, #0431df, #0887fb);
   -webkit-background-clip: text;
@@ -670,7 +706,7 @@ header div h1 {
     font-size: 5vw;
   }
   #ledelice .content-menu .menu {
-    width: 90%;
+    width: 95%;
   }
   #ledelice .content-menu .menu .text-title {
     font-size: 20px;
@@ -680,16 +716,16 @@ header div h1 {
   padding-bottom: 150px;
 }
 
-#ledelice .content-menu {
+#lapalette .content-menu {
   width: 100%;
   padding-bottom: 235px;
 }
-#ledelice .content-menu h1 {
+#lapalette .content-menu h1 {
   text-align: center;
   margin-top: 100px;
   font-size: 5vw;
 }
-#ledelice .content-menu .menu {
+#lapalette .content-menu .menu {
   width: 80%;
   max-width: 1190px;
   background-color: #fdfffd;
@@ -697,85 +733,85 @@ header div h1 {
   margin-top: 30px;
   box-shadow: 0px 0px 8px 2px #a2a5a4b9;
 }
-#ledelice .content-menu .menu .icon i {
+#lapalette .content-menu .menu .icon i {
   margin-top: 100px;
   font-size: 10vw;
 }
-#ledelice .content-menu .menu .icon.botom i {
+#lapalette .content-menu .menu .icon.botom i {
   font-size: 6vw;
 }
-#ledelice .content-menu .menu .icon.botom span {
+#lapalette .content-menu .menu .icon.botom span {
   font-family: "kaushan script";
   color: #000;
   margin-left: 20px;
 }
-#ledelice .content-menu .menu .text {
+#lapalette .content-menu .menu .text {
   font-family: "kaushan script";
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
   background: -webkit-linear-gradient(right, #bfff7e, #42973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#ledelice .content-menu .menu .text-title {
+#lapalette .content-menu .menu .text-title {
   font-family: segoe print;
   font-weight: bold;
   font-size: 30px;
   color: #000;
 }
-#ledelice .content-menu .menu .divider {
+#lapalette .content-menu .menu .divider {
   display: flex;
   margin-top: 80px;
 }
-#ledelice .content-menu .menu img {
+#lapalette .content-menu .menu img {
   width: 25%;
   height: auto;
   margin: auto;
   vertical-align: middle;
 }
-#ledelice .content-menu .menu img.img2 {
+#lapalette .content-menu .menu img.img2 {
   float: right;
   margin-right: 5%;
 }
-#ledelice .content-menu .menu img.img1 {
+#lapalette .content-menu .menu img.img1 {
   margin-left: 5%;
 }
-#ledelice .content-menu .menu .text-menu {
+#lapalette .content-menu .menu .text-menu {
   display: flex;
   justify-content: space-between;
   margin: 0 7%;
 }
-#ledelice .content-menu .menu .text-menu p {
+#lapalette .content-menu .menu .text-menu p {
   font-size: 25px;
   font-family: segoe print;
   margin-top: 20px;
   color: #000;
 }
-#ledelice .content-menu .menu .text-menu .price {
+#lapalette .content-menu .menu .text-menu .price {
   font-weight: bold;
 }
 @media screen and (max-width: 900px) {
-  #ledelice div.text-menu {
+  #lapalette div.text-menu {
     flex-direction: column;
   }
-  #ledelice .price {
+  #lapalette .price {
     order: 1;
     margin: auto;
   }
-  #ledelice .prog {
+  #lapalette .prog {
     order: 2;
   }
-  #ledelice .icon.botom span {
+  #lapalette .icon.botom span {
     font-size: 5vw;
   }
-  #ledelice .content-menu .menu {
-    width: 90%;
+  #lapalette .content-menu .menu {
+    width: 95%;
   }
-  #ledelice .content-menu .menu .text-title {
+  #lapalette .content-menu .menu .text-title {
     font-size: 20px;
   }
 }
-#ledelice #grade3 {
+#lapalette #grade3 {
   padding-bottom: 150px;
 }
 

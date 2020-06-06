@@ -6,16 +6,25 @@
     #grade1 p{
         color:$lechic2;
         margin-bottom: 30px;
+        &.text-title{
+            margin-bottom: 0px;
+        }
     }
     #grade2 p{
         color:$lechic3;
         margin-bottom: 30px;
+        &.text-title{
+            margin-bottom: 0px;
+        }
     }
     #grade3 {
         padding-bottom: 150px;
         p{
         color:$lechic4;
         margin-bottom: 30px;
+        &.text-title{
+            margin-bottom: 0px;
+        }
         }
        
     }
@@ -27,7 +36,7 @@
         padding-bottom: 150px;
     }
 }
-#ledelice{
+#lapalette{
     @include menu($lapalette,$kaushan,$lapalette3,$lapalette2,$black,$segoe);
     #grade3 {
         padding-bottom: 150px;

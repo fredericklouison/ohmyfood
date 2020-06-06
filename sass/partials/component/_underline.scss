@@ -1,0 +1,29 @@
+.text-title {
+    &:hover {
+        & + .underline {
+            transform: scaleX(1);
+        }
+    }
+}
+.underline {
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+    height: 4px;
+    transition: transform 500ms;
+    transition-timing-function: ease-out;
+    background-color: $black;
+}
+.lanote{
+    background-color: $lanote2;
+}
+.lechic{
+    &_1{
+        background-color: $lechic2;
+    }
+    &_2{
+        background-color: $lechic3;
+    }
+    &_3{
+        background-color: $lechic4;
+    }
+}

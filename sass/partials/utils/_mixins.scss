@@ -53,7 +53,7 @@
             }
             .text{
                 font-family:$font-title ;
-                font-size: 4vw ;
+                font-size: 6vw ;
                 text-align: center;
                 @include transition-color($color1,$color2);
                 
@@ -113,7 +113,7 @@
             font-size: 5vw;
         }
         .content-menu .menu{
-            width: 90%;
+            width: 95%;
         }
         .content-menu .menu .text-title{
             font-size: 20px;
