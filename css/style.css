@@ -438,6 +438,11 @@ header div h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 900px) {
+  #lanote .content-menu .menu .text {
+    font-size: 12vw;
+  }
+}
 #lanote .content-menu .menu .text-title {
   font-family: segoe print;
   font-weight: bold;
@@ -487,7 +492,7 @@ header div h1 {
     order: 2;
   }
   #lanote .icon.botom span {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   #lanote .content-menu .menu {
     width: 95%;
@@ -533,6 +538,11 @@ header div h1 {
   background: -webkit-linear-gradient(right, #6e4ccc, #d8852e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 900px) {
+  #lechic .content-menu .menu .text {
+    font-size: 12vw;
+  }
 }
 #lechic .content-menu .menu .text-title {
   font-family: "serif";
@@ -583,7 +593,7 @@ header div h1 {
     order: 2;
   }
   #lechic .icon.botom span {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   #lechic .content-menu .menu {
     width: 95%;
@@ -657,6 +667,11 @@ header div h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 900px) {
+  #ledelice .content-menu .menu .text {
+    font-size: 12vw;
+  }
+}
 #ledelice .content-menu .menu .text-title {
   font-family: segoe print;
   font-weight: bold;
@@ -706,7 +721,7 @@ header div h1 {
     order: 2;
   }
   #ledelice .icon.botom span {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   #ledelice .content-menu .menu {
     width: 95%;
@@ -755,6 +770,11 @@ header div h1 {
   background: -webkit-linear-gradient(right, #bfff7e, #42973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 900px) {
+  #lapalette .content-menu .menu .text {
+    font-size: 12vw;
+  }
 }
 #lapalette .content-menu .menu .text-title {
   font-family: segoe print;
@@ -805,7 +825,7 @@ header div h1 {
     order: 2;
   }
   #lapalette .icon.botom span {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   #lapalette .content-menu .menu {
     width: 95%;

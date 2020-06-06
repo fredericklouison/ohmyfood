@@ -58,6 +58,11 @@
                 @include transition-color($color1,$color2);
                 
             }
+            @media screen and (max-width:900px){
+                .text{
+                    font-size: 12vw ;
+                }
+            }
             .text-title{
                 font-family: $font-text;
                 font-weight: bold;
@@ -110,7 +115,7 @@
             order: 2;
         }
         .icon.botom span{
-            font-size: 5vw;
+            font-size: 8vw;
         }
         .content-menu .menu{
             width: 95%;
