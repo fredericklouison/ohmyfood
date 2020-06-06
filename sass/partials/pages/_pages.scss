@@ -1,0 +1,35 @@
+#lanote{
+    @include menu($lanote,$devonshire,$lanote2,$lanote2,$lanote2,$segoe)
+}
+#lechic{
+    @include menu($lechic,$croissant,$lechic4,$lechic2);
+    #grade1 p{
+        color:$lechic2;
+        margin-bottom: 30px;
+    }
+    #grade2 p{
+        color:$lechic3;
+        margin-bottom: 30px;
+    }
+    #grade3 {
+        padding-bottom: 150px;
+        p{
+        color:$lechic4;
+        margin-bottom: 30px;
+        }
+       
+    }
+
+}
+#ledelice{
+    @include menu($ledelice,$dancing,$ledelice2,$ledelice3,$black,$segoe);
+    #grade3 {
+        padding-bottom: 150px;
+    }
+}
+#ledelice{
+    @include menu($lapalette,$kaushan,$lapalette3,$lapalette2,$black,$segoe);
+    #grade3 {
+        padding-bottom: 150px;
+    }
+}

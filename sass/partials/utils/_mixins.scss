@@ -21,3 +21,102 @@
     }
     
 }
+@mixin menu($bg-color,$font-title,$color1,$color2:$color1,$font-color:black,$font-text:'serif') {
+    .content-menu{
+        width: 100%;
+        padding-bottom: 235px;
+        h1{
+            text-align: center;
+            margin-top: 100px;
+            font-size: 5vw;
+        }
+        .menu{
+            width: 80%;
+            max-width: 1190px;
+            background-color: $bg-color;
+            margin: auto;
+            margin-top: 30px;
+            box-shadow: 0px 0px 8px 2px #a2a5a4b9;
+            .icon i{
+                margin-top: 100px;
+                font-size: 10vw;
+            }
+            .icon.botom{
+                i{
+                font-size: 6vw;
+                }
+                span{
+                    font-family: $font-title;
+                    color: $font-color;
+                    margin-left: 20px;
+                }
+            }
+            .text{
+                font-family:$font-title ;
+                font-size: 4vw ;
+                text-align: center;
+                @include transition-color($color1,$color2);
+                
+            }
+            .text-title{
+                font-family: $font-text;
+                font-weight: bold;
+                font-size: 30px;
+                color: $font-color;
+            }
+            .divider{
+                display: flex;
+                margin-top: 80px;
+            }
+            img{
+                width: 25%;
+                height: auto;
+                margin: auto;
+                vertical-align: middle;
+                &.img2{
+                    float: right;
+                    margin-right: 5%;
+                } 
+                &.img1{
+                    margin-left: 5%;
+                }
+            }
+            .text-menu{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 7%;
+                p{
+                    font-size: 25px;
+                    font-family: $font-text;
+                    margin-top: 20px;
+                    color: $font-color;
+                }
+                .price{
+                    font-weight: bold;
+                }
+            
+            }
+        }
+    }
+    @media screen and (max-width:900px){
+        div.text-menu{
+            flex-direction: column;
+        }
+        .price{
+            order:1;
+            margin: auto;
+        }
+        .prog{
+            order: 2;
+        }
+        .icon.botom span{
+            font-size: 5vw;
+        }
+        .content-menu .menu{
+            width: 90%;
+        }
+        .content-menu .menu .text-title{
+            font-size: 20px;
+        }
+    }
+}

@@ -5,6 +5,7 @@ footer{
     width: 100%;
     background-color: $green;
     display: flex;
+    border-top:2px solid $green-light;
 }
 @media screen and (max-width:1024px){
     footer{

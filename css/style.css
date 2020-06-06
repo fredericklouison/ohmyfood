@@ -192,6 +192,7 @@ footer {
   width: 100%;
   background-color: #579c87;
   display: flex;
+  border-top: 2px solid #a1c181;
 }
 
 @media screen and (max-width: 1024px) {
@@ -297,7 +298,7 @@ header div h1 {
   text-align: center;
   font-size: 28px;
   font-family: "Croissant One", sans-serif;
-  background: -webkit-linear-gradient(right, #c19df3, #d8852e);
+  background: -webkit-linear-gradient(right, #6e4ccc, #d8852e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -372,6 +373,410 @@ header div h1 {
     margin-right: auto;
     margin-top: 100px;
   }
+}
+#lanote .content-menu {
+  width: 100%;
+  padding-bottom: 235px;
+}
+#lanote .content-menu h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 5vw;
+}
+#lanote .content-menu .menu {
+  width: 80%;
+  max-width: 1190px;
+  background-color: #fcdfdb;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 0px 0px 8px 2px #a2a5a4b9;
+}
+#lanote .content-menu .menu .icon i {
+  margin-top: 100px;
+  font-size: 10vw;
+}
+#lanote .content-menu .menu .icon.botom i {
+  font-size: 6vw;
+}
+#lanote .content-menu .menu .icon.botom span {
+  font-family: "Devonshire";
+  color: #3c1218;
+  margin-left: 20px;
+}
+#lanote .content-menu .menu .text {
+  font-family: "Devonshire";
+  font-size: 4vw;
+  text-align: center;
+  background: -webkit-linear-gradient(right, #3c1218, #3c1218);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#lanote .content-menu .menu .text-title {
+  font-family: segoe print;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c1218;
+}
+#lanote .content-menu .menu .divider {
+  display: flex;
+  margin-top: 80px;
+}
+#lanote .content-menu .menu img {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  vertical-align: middle;
+}
+#lanote .content-menu .menu img.img2 {
+  float: right;
+  margin-right: 5%;
+}
+#lanote .content-menu .menu img.img1 {
+  margin-left: 5%;
+}
+#lanote .content-menu .menu .text-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 7%;
+}
+#lanote .content-menu .menu .text-menu p {
+  font-size: 25px;
+  font-family: segoe print;
+  margin-top: 20px;
+  color: #3c1218;
+}
+#lanote .content-menu .menu .text-menu .price {
+  font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  #lanote div.text-menu {
+    flex-direction: column;
+  }
+  #lanote .price {
+    order: 1;
+    margin: auto;
+  }
+  #lanote .prog {
+    order: 2;
+  }
+  #lanote .icon.botom span {
+    font-size: 5vw;
+  }
+  #lanote .content-menu .menu {
+    width: 90%;
+  }
+  #lanote .content-menu .menu .text-title {
+    font-size: 20px;
+  }
+}
+
+#lechic .content-menu {
+  width: 100%;
+  padding-bottom: 235px;
+}
+#lechic .content-menu h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 5vw;
+}
+#lechic .content-menu .menu {
+  width: 80%;
+  max-width: 1190px;
+  background-color: #fff5fe;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 0px 0px 8px 2px #a2a5a4b9;
+}
+#lechic .content-menu .menu .icon i {
+  margin-top: 100px;
+  font-size: 10vw;
+}
+#lechic .content-menu .menu .icon.botom i {
+  font-size: 6vw;
+}
+#lechic .content-menu .menu .icon.botom span {
+  font-family: "Croissant One";
+  color: black;
+  margin-left: 20px;
+}
+#lechic .content-menu .menu .text {
+  font-family: "Croissant One";
+  font-size: 4vw;
+  text-align: center;
+  background: -webkit-linear-gradient(right, #6e4ccc, #d8852e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#lechic .content-menu .menu .text-title {
+  font-family: "serif";
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+#lechic .content-menu .menu .divider {
+  display: flex;
+  margin-top: 80px;
+}
+#lechic .content-menu .menu img {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  vertical-align: middle;
+}
+#lechic .content-menu .menu img.img2 {
+  float: right;
+  margin-right: 5%;
+}
+#lechic .content-menu .menu img.img1 {
+  margin-left: 5%;
+}
+#lechic .content-menu .menu .text-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 7%;
+}
+#lechic .content-menu .menu .text-menu p {
+  font-size: 25px;
+  font-family: "serif";
+  margin-top: 20px;
+  color: black;
+}
+#lechic .content-menu .menu .text-menu .price {
+  font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  #lechic div.text-menu {
+    flex-direction: column;
+  }
+  #lechic .price {
+    order: 1;
+    margin: auto;
+  }
+  #lechic .prog {
+    order: 2;
+  }
+  #lechic .icon.botom span {
+    font-size: 5vw;
+  }
+  #lechic .content-menu .menu {
+    width: 90%;
+  }
+  #lechic .content-menu .menu .text-title {
+    font-size: 20px;
+  }
+}
+#lechic #grade1 p {
+  color: #d8852e;
+  margin-bottom: 30px;
+}
+#lechic #grade2 p {
+  color: #a56799;
+  margin-bottom: 30px;
+}
+#lechic #grade3 {
+  padding-bottom: 150px;
+}
+#lechic #grade3 p {
+  color: #6e4ccc;
+  margin-bottom: 30px;
+}
+
+#ledelice .content-menu {
+  width: 100%;
+  padding-bottom: 235px;
+}
+#ledelice .content-menu h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 5vw;
+}
+#ledelice .content-menu .menu {
+  width: 80%;
+  max-width: 1190px;
+  background-color: #f9f9f9;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 0px 0px 8px 2px #a2a5a4b9;
+}
+#ledelice .content-menu .menu .icon i {
+  margin-top: 100px;
+  font-size: 10vw;
+}
+#ledelice .content-menu .menu .icon.botom i {
+  font-size: 6vw;
+}
+#ledelice .content-menu .menu .icon.botom span {
+  font-family: "Dancing script";
+  color: #000;
+  margin-left: 20px;
+}
+#ledelice .content-menu .menu .text {
+  font-family: "Dancing script";
+  font-size: 4vw;
+  text-align: center;
+  background: -webkit-linear-gradient(right, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#ledelice .content-menu .menu .text-title {
+  font-family: segoe print;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+}
+#ledelice .content-menu .menu .divider {
+  display: flex;
+  margin-top: 80px;
+}
+#ledelice .content-menu .menu img {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  vertical-align: middle;
+}
+#ledelice .content-menu .menu img.img2 {
+  float: right;
+  margin-right: 5%;
+}
+#ledelice .content-menu .menu img.img1 {
+  margin-left: 5%;
+}
+#ledelice .content-menu .menu .text-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 7%;
+}
+#ledelice .content-menu .menu .text-menu p {
+  font-size: 25px;
+  font-family: segoe print;
+  margin-top: 20px;
+  color: #000;
+}
+#ledelice .content-menu .menu .text-menu .price {
+  font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  #ledelice div.text-menu {
+    flex-direction: column;
+  }
+  #ledelice .price {
+    order: 1;
+    margin: auto;
+  }
+  #ledelice .prog {
+    order: 2;
+  }
+  #ledelice .icon.botom span {
+    font-size: 5vw;
+  }
+  #ledelice .content-menu .menu {
+    width: 90%;
+  }
+  #ledelice .content-menu .menu .text-title {
+    font-size: 20px;
+  }
+}
+#ledelice #grade3 {
+  padding-bottom: 150px;
+}
+
+#ledelice .content-menu {
+  width: 100%;
+  padding-bottom: 235px;
+}
+#ledelice .content-menu h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 5vw;
+}
+#ledelice .content-menu .menu {
+  width: 80%;
+  max-width: 1190px;
+  background-color: #fdfffd;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 0px 0px 8px 2px #a2a5a4b9;
+}
+#ledelice .content-menu .menu .icon i {
+  margin-top: 100px;
+  font-size: 10vw;
+}
+#ledelice .content-menu .menu .icon.botom i {
+  font-size: 6vw;
+}
+#ledelice .content-menu .menu .icon.botom span {
+  font-family: "kaushan script";
+  color: #000;
+  margin-left: 20px;
+}
+#ledelice .content-menu .menu .text {
+  font-family: "kaushan script";
+  font-size: 4vw;
+  text-align: center;
+  background: -webkit-linear-gradient(right, #bfff7e, #42973c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#ledelice .content-menu .menu .text-title {
+  font-family: segoe print;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+}
+#ledelice .content-menu .menu .divider {
+  display: flex;
+  margin-top: 80px;
+}
+#ledelice .content-menu .menu img {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  vertical-align: middle;
+}
+#ledelice .content-menu .menu img.img2 {
+  float: right;
+  margin-right: 5%;
+}
+#ledelice .content-menu .menu img.img1 {
+  margin-left: 5%;
+}
+#ledelice .content-menu .menu .text-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 7%;
+}
+#ledelice .content-menu .menu .text-menu p {
+  font-size: 25px;
+  font-family: segoe print;
+  margin-top: 20px;
+  color: #000;
+}
+#ledelice .content-menu .menu .text-menu .price {
+  font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  #ledelice div.text-menu {
+    flex-direction: column;
+  }
+  #ledelice .price {
+    order: 1;
+    margin: auto;
+  }
+  #ledelice .prog {
+    order: 2;
+  }
+  #ledelice .icon.botom span {
+    font-size: 5vw;
+  }
+  #ledelice .content-menu .menu {
+    width: 90%;
+  }
+  #ledelice .content-menu .menu .text-title {
+    font-size: 20px;
+  }
+}
+#ledelice #grade3 {
+  padding-bottom: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
