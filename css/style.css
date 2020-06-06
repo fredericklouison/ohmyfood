@@ -448,6 +448,7 @@ header div h1 {
   font-weight: bold;
   font-size: 30px;
   color: #3c1218;
+  text-align: center;
 }
 #lanote .content-menu .menu .divider {
   display: flex;
@@ -549,6 +550,7 @@ header div h1 {
   font-weight: bold;
   font-size: 30px;
   color: black;
+  text-align: center;
 }
 #lechic .content-menu .menu .divider {
   display: flex;
@@ -677,6 +679,7 @@ header div h1 {
   font-weight: bold;
   font-size: 30px;
   color: #000;
+  text-align: center;
 }
 #ledelice .content-menu .menu .divider {
   display: flex;
@@ -781,6 +784,7 @@ header div h1 {
   font-weight: bold;
   font-size: 30px;
   color: #000;
+  text-align: center;
 }
 #lapalette .content-menu .menu .divider {
   display: flex;

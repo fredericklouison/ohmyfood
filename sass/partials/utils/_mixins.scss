@@ -61,6 +61,7 @@
             @media screen and (max-width:900px){
                 .text{
                     font-size: 12vw ;
+                    
                 }
             }
             .text-title{
@@ -68,6 +69,7 @@
                 font-weight: bold;
                 font-size: 30px;
                 color: $font-color;
+                text-align: center;
             }
             .divider{
                 display: flex;
