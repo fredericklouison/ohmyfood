@@ -28,7 +28,9 @@
         }
        
     }
-
+    div.menu #mention{
+        padding: 100px 7%;
+    }
 }
 #ledelice{
     @include menu($ledelice,$dancing,$ledelice2,$ledelice3,$black,$segoe);

@@ -616,6 +616,9 @@ header div h1 {
 #lechic #grade3 p.text-title {
   margin-bottom: 0px;
 }
+#lechic div.menu #mention {
+  padding: 100px 7%;
+}
 
 #ledelice .content-menu {
   width: 100%;
