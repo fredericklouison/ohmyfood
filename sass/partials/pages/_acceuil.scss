@@ -51,7 +51,7 @@
     background-color: $lapalette;
     @include menu-acceuil($lapalette4,$lapalette3,$lapalette2,'kaushan script',segoe script,40px)
 }
-@media screen and (min-width:1500px){
+@media screen and (min-width:1920px){
     .content{
         display: flex;
         max-width: 1900px;

@@ -375,7 +375,7 @@ header div h1 {
   color: #72bf56;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1920px) {
   .content {
     display: flex;
     max-width: 1900px;
@@ -630,6 +630,10 @@ header div h1 {
 }
 #lechic div.menu #mention {
   padding: 100px 7%;
+}
+#lechic div.menu #mention section h2 {
+  margin: 50px auto;
+  text-align: center;
 }
 
 #ledelice .content-menu {
